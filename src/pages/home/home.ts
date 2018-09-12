@@ -8,7 +8,7 @@ import { NavController } from 'ionic-angular';
 export class HomePage {
   private firstNum : string;
   private secondNum : string;
-  private finalRes: string;
+  private finalRes: number;
   private a: number;
   private b: number;
 
@@ -19,12 +19,14 @@ export class HomePage {
   addNum(){
     
     this.a=(parseInt(this.firstNum)+parseInt(this.secondNum));
-    alert(this.a);
+  
+    this.finalRes=this.a;
+    
   }
 
   minNum(){
     this.b=(parseInt(this.firstNum)-parseInt(this.secondNum));
-    alert(this.b);
+    this.finalRes=this.b;
   }
 
 }

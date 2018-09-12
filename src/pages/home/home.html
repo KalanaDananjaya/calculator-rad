@@ -24,9 +24,31 @@
 
   <button ion-button id="minBtn" (click)="minNum()">-</button>
 
+
   <ion-item>
-    <ion-label id="result">Result</ion-label>
+    <ion-input [(ngModel)]="finalRes" type="number" placeholder="Result"></ion-input>
   </ion-item>
+
+<br>
+<br>
+<br>
+
+  <ion-list>
+    <h3>Index Numbers, Team Members and Work Percentages</h3>
+    <ion-item>160713U-Kalana Wijethunga(25%)</ion-item>
+    <ion-item>160671L-Ayesh Malindu/Scrum Master(20%)</ion-item>
+    <ion-item>160491J-Lakmali Chandrapraba(20%)</ion-item>
+    <ion-item>160514K-Charith Rajitha(35%)</ion-item>
+  </ion-list>
+
+  <ion-list>
+    <h3>Sprints and Time Intervals</h3>
+    <ion-item>Selecting the framework and the host - 5 mins</ion-item>
+    <ion-item>Development of the application - 25 mins</ion-item>
+    <ion-item>Testing and Evaluation - 5 mins</ion-item>
+    <ion-item>Deployment - 25 mins</ion-item>
+  </ion-list>
+
 
   
 </ion-content>
